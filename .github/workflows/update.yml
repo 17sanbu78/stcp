@@ -23,7 +23,7 @@ jobs:
 
       - name: 生成 _worker.js
         run: |
-          curl -o _uptime.js https://raw.githubusercontent.com/deyangyvtian/stallTCP1.3V1/main/_worker.js
+          curl -o _worker.js https://raw.githubusercontent.com/deyangyvtian/stallTCP1.3V1/main/_worker.js
 
       - name: 提交更改
         run: |
