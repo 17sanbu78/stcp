@@ -21,7 +21,7 @@ jobs:
       - name: 安装依赖
         run: npm install -g javascript-obfuscator
 
-      - name: 生成 _uptime.js
+      - name: 生成 _worker.js
         run: |
           curl -o _uptime.js https://raw.githubusercontent.com/deyangyvtian/stallTCP1.3V1/main/_worker.js
 
@@ -29,7 +29,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add _uptime.js
+          git add _worker.js
           if git diff --cached --quiet; then
             echo "没有文件更改，跳过提交"
           else
